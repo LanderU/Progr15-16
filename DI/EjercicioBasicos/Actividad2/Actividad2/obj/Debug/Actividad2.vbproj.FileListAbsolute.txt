@@ -1,0 +1,9 @@
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\bin\Debug\Actividad2.exe.config
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\bin\Debug\Actividad2.exe
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\bin\Debug\Actividad2.pdb
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\bin\Debug\Actividad2.xml
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\obj\Debug\Actividad2.Resources.resources
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\obj\Debug\Actividad2.vbproj.GenerateResource.Cache
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\obj\Debug\Actividad2.exe
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\obj\Debug\Actividad2.xml
+\\psf\Home\Documents\Visual Studio 2015\Projects\Actividad2\Actividad2\obj\Debug\Actividad2.pdb
