@@ -9,3 +9,7 @@ formula: 1/(1/r1 + 1/r2 + 1/r3).
 
 3. Escribe un programa que pida una hora en segundos y la saque por 
 pantalla en formato hh:mm:ss.
+
+4. Realizar un programa que lea una fecha representada por
+dos enteros, mes y año,y dé como resultado el número de 
+días de ese mes.
