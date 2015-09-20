@@ -13,3 +13,8 @@ pantalla en formato hh:mm:ss.
 4. Realizar un programa que lea una fecha representada por
 dos enteros, mes y año,y dé como resultado el número de 
 días de ese mes.
+
+5. Realizar un programa que a través de un menú permita
+realizar las operaciones de sumar, restar, multiplicar, 
+dividir y salir. Las operaciones constarán solamente de
+dos operandos.
