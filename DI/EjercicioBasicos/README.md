@@ -43,3 +43,9 @@ son iguales. Considera que dos de ellos puedan ser iguales.
 
 7. Introducir por teclado un número comprendido entre el 1 y el 7 e imprimir el día de la
 semana al que hace referencia.
+
+8. Visualizar un menú como el siguiente y cuando el usuario elija una opción mostrar un mensaje indicando la opción elegida. Si no elige ninguna de ella, indicaremos que es una opción incorrecta.
+  A-Procesador de Texto
+  B-Hoja de Calculo
+  C-Base de Datos
+  Introduzca una opción:
