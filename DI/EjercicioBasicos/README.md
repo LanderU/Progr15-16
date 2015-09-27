@@ -33,3 +33,6 @@ por pantalla el resultado de la resta. Independientemente de si el uno es mayor 
 también queremos visualizar la suma de los dos números.
 
 4. Introducir dos números por teclado e imprimir un mensaje indicando si el número es mayor, menor o igual que el número dos.
+
+5. Introducir tres números por teclado. Indicar mediante un mensaje, cual es el mas pequeño
+de los tres. 
