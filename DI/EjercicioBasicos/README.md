@@ -49,3 +49,7 @@ semana al que hace referencia.
   B-Hoja de Calculo
   C-Base de Datos
   Introduzca una opción:
+
+9. 
+
+10. Realiza un programa que visualice 25 nombres introducidos por teclado.
