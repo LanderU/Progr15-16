@@ -40,3 +40,6 @@ de los tres.
 6. Introducir tres números a través del teclado. Imprimir un mensaje indicando si los tres
 números han sido introducidos ordenados en secuencia creciente, decreciente,o si los tres
 son iguales. Considera que dos de ellos puedan ser iguales.
+
+7. Introducir por teclado un número comprendido entre el 1 y el 7 e imprimir el día de la
+semana al que hace referencia.
