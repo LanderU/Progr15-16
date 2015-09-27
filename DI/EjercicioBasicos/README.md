@@ -53,3 +53,4 @@ semana al que hace referencia.
 9. 
 
 10. Realiza un programa que visualice 25 nombres introducidos por teclado.
+11. Visualiza todos los números del 1 al 1000 ambos incluidos.
