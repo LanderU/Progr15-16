@@ -16,6 +16,10 @@ días de ese mes.
 
 7. Escribe un programa que pida al usuario un número concreto de valores enteros (el usuario nos dirá cuantos) y nos muestre en pantalla el resultado acumulado de multiplicar todos ellos.
 
+8. La activadad 8 es la misma que la 6 pero con funciones y procedimientos.
+
+9. La activadad 9 es la misma que la 7 pero con funciones y procedimientos. 
+
 **Ejercicios Complementarios**
 
 1. Introducir a través del teclado dos números. Si el número uno es mayor que el segundo,
