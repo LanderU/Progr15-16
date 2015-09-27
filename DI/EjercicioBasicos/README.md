@@ -36,3 +36,7 @@ también queremos visualizar la suma de los dos números.
 
 5. Introducir tres números por teclado. Indicar mediante un mensaje, cual es el mas pequeño
 de los tres. 
+
+6. Introducir tres números a través del teclado. Imprimir un mensaje indicando si los tres
+números han sido introducidos ordenados en secuencia creciente, decreciente,o si los tres
+son iguales. Considera que dos de ellos puedan ser iguales.
