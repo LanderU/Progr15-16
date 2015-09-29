@@ -54,3 +54,7 @@ semana al que hace referencia.
 
 10. Realiza un programa que visualice 25 nombres introducidos por teclado.
 11. Visualiza todos los números del 1 al 1000 ambos incluidos.
+
+**Arrays**
+
+1. Crear una matriz con el numero de elementos y la dimensióon indicada por el usuario (1-3). A continuacion el usuario debe teclear valores para llenar la matriz y por ultimo, debemos visualizar los datos almacenados en la matriz.
