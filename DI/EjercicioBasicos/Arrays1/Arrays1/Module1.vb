@@ -26,7 +26,7 @@
                 posiciones = 0
             End Try
 
-        Loop While posiciones <= 0
+        Loop While posiciones < 0
 
 
         Select Case dimension
