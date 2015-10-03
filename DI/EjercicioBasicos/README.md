@@ -58,3 +58,5 @@ semana al que hace referencia.
 **Arrays**
 
 1. Crear una matriz con el numero de elementos y la dimensióon indicada por el usuario (1-3). A continuacion el usuario debe teclear valores para llenar la matriz y por ultimo, debemos visualizar los datos almacenados en la matriz.
+
+2. Desarrolla un ejercicio en el que se cree un array de una dimension, del tamano indicado por el usuario. Tras crearlo guarda en el los datos tecleados por el usuario. A continuacion visualiza un menú para que el usuario pueda realizar distintas tareas: Buscar un valor en el array, Copiar un numero determinado de elementos, Inicializar el array, Terminar la ejecucion.
