@@ -3,7 +3,7 @@
 
         Do
             limpiar()
-            Console.Write("Escriba el la dimensión que le quieres asignar a la matríz: ")
+            Console.Write("Escriba el la dimensión que le quieres asignar a la matríz(1-3): ")
             Try
                 dimension = Integer.Parse(Console.ReadLine())
             Catch ex As Exception
@@ -26,7 +26,7 @@
                 posiciones = 0
             End Try
 
-        Loop While posiciones <= 0
+        Loop While posiciones < 0
 
 
         Select Case dimension
