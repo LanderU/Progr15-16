@@ -1,4 +1,4 @@
-﻿Module Module1
+Module Module1
     Private Sub pausar()
         Threading.Thread.Sleep(2000)
     End Sub
@@ -97,19 +97,27 @@
 
                 Dim newArray(alto) As String
                 Dim indice As Integer = 0
-                While indice < newArray.Length
-                    newArray(indice) = array(indice)
+                Dim indice1 As Integer = bajo
+                While indice1 <= alto
+                    newArray(indice) = array(indice1)
+                    indice1 += 1
                     indice += 1
                 End While
                 limpiar()
                 Console.WriteLine("El nuevo array con lo copiado queda de la siguiente manera: ")
 
                 indice = 0
-                While indice < newArray.Length
-                    Console.WriteLine("Lo guardado es: " & newArray(indice))
+                If bajo = 0 And alto = 0 Then
+                    Console.WriteLine("Lo guardado es: " & newArray(0))
                     pausar()
-                    indice += 1
-                End While
+                Else
+                    While indice < newArray.GetUpperBound(0)
+                        Console.WriteLine("Lo guardado es: " & newArray(indice))
+                        pausar()
+                        indice += 1
+                    End While
+                End If
+
 
 
 
@@ -159,3 +167,4 @@
     End Sub
 
 End Module
+
