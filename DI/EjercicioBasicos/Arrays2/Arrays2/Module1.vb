@@ -93,7 +93,7 @@
                         alto = -1
                     End Try
 
-                Loop While (alto > array.GetUpperBound(0)) Or (alto < array.GetUpperBound(0))
+                Loop While (alto > array.GetUpperBound(0)) Or (alto < array.GetLowerBound(0))
 
                 Dim newArray(alto) As String
                 Dim indice As Integer = 0
@@ -107,7 +107,7 @@
                 Console.WriteLine("El nuevo array con lo copiado queda de la siguiente manera: ")
 
                 indice = 0
-                If bajo = 0 And alto = 0 Then
+                If bajo = alto Then
                     Console.WriteLine("Lo guardado es: " & newArray(0))
                     pausar()
                 Else
