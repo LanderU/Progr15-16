@@ -82,7 +82,7 @@
             Console.WriteLine("La nota del alumno es: SUFICIENTE")
             pausar()
         Else
-            Console.WriteLine("La nota del alumno es INSUFICIENTE.")
+            Console.WriteLine("La nota del alumno es: INSUFICIENTE.")
             pausar()
         End If
 
