@@ -5,3 +5,4 @@
 3. Introducir dos números por teclado e impirmir un mensaje indicando si el número uno es mayor, menor o igual que el número dos.
 4. Introducir tres números por teclado. Indicar mediante un mensaje, cual es el más pequeño de los tres.
 5. Introducir tres números a través del teclado. Imprimir un mensaje indicando si los tres números han sido introducidos ordenador en secuencia creciente, decreciente o si los tres son iguales. Considera que dos de ellos pueden ser iguales.
+6. Introducir por teclado un número comprendido entre el 1 y el 7 e imprimir el día de la semana al que hace referencia.
