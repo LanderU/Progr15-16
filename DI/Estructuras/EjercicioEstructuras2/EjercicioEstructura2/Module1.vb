@@ -10,6 +10,12 @@
         Dim nomAsig As String
         Dim nota As String
     End Structure
+    Private Sub mostrarAsignaturas(ByVal posiblesAsignaturas)
+        For i As Integer = 0 To posiblesAsignaturas.length - 1
+            Console.WriteLine(posiblesAsignaturas(i))
+            pausar()
+        Next
+    End Sub
 
     Sub Main()
 
@@ -56,6 +62,8 @@
             ' Introducimos la cantidad de asignaturas que va a tener ese alumno.
             matriculaAlumnos(i) = New asignaturas(numAsig) {}
             For asig As Integer = 0 To numAsig
+                Console.WriteLine("Asignaturas a elegir: ")
+                mostrarAsignaturas(posiblesAsignaturas)
                 Console.Write("Nombre de la asignatura: ")
                 matriculaAlumnos(i)(asig).nomAsig = Console.ReadLine()
                 Console.Write("Nota obtenida en esa asignatura: ")
@@ -70,8 +78,6 @@
                 Console.WriteLine("Nombre de la asignatura: " + matriculaAlumnos(i)(x).nomAsig)
                 Console.WriteLine("Nota obtenida: " + matriculaAlumnos(i)(x).nota)
                 pausar()
-                
-
             Next
         Next
 
