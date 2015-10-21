@@ -1,0 +1,9 @@
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\bin\Debug\Entrega2LanderUsategui.exe.config
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\bin\Debug\Entrega2LanderUsategui.exe
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\bin\Debug\Entrega2LanderUsategui.pdb
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\bin\Debug\Entrega2LanderUsategui.xml
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\obj\Debug\Entrega2LanderUsategui.Resources.resources
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\obj\Debug\Entrega2LanderUsategui.vbproj.GenerateResource.Cache
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\obj\Debug\Entrega2LanderUsategui.exe
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\obj\Debug\Entrega2LanderUsategui.xml
+\\psf\home\documents\visual studio 2015\Projects\Entrega2LanderUsategui\Entrega2LanderUsategui\obj\Debug\Entrega2LanderUsategui.pdb
