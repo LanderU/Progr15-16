@@ -19,16 +19,25 @@
         Dim filSumar As Integer
         Dim colSumar As Integer
         Console.Write("Fila para sumar: ")
-        'filSumar = Integer.Parse(Console.ReadLine())
-        ' colSumar = Integer.Parse(Console.ReadLine())
+        filSumar = Integer.Parse(Console.ReadLine())
+        Console.Write("Columna a sumar: ")
+        colSumar = Integer.Parse(Console.ReadLine())
 
-        For i As Integer = 0 To array.GetUpperBound(0)
-            Console.WriteLine(array(i, i))
-            pausar()
+        Dim sumaFila As Integer = 0
+        Dim sumaColumna As Integer = 0
+
+        For i As Integer = 0 To array.GetUpperBound(1)
+            sumaFila += array(filSumar, i)
         Next
-
-
-
+        Console.WriteLine("Suma de la fila: " & sumaFila)
+        pausar()
+        For i As Integer = 0 To array.GetUpperBound(0)
+            sumaColumna += array(i, colSumar)
+        Next
+        Console.WriteLine("Suma de la columna: " & sumaColumna)
+        pausar()
+        Console.WriteLine("El total de la suma es: " & sumaColumna + sumaFila)
+        pausar()
     End Sub
 
 End Module
