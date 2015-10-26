@@ -27,7 +27,6 @@ Module Module1
 
         ' Lo añadimos al path, con la extensión por si al usuario se le ha olvidado
 
-        'Dim path As String = "c:\users\Public" + nomFichero + ".txt"
         Dim path As String = "C:\users\Public\" + nomFichero + ".txt"
 
         ' Empezamos con la pedida de datos para el usuario. Le pediremos nombre, dirección, teléfono y dirección de correo electrónico
