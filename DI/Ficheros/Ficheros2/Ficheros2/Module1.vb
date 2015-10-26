@@ -69,7 +69,22 @@ Module Module1
             fichero.Write(relleno, 0, relleno.Length)
         Next
         fichero.Close()
-        ' Falta la lectura de los datos del fichero PENDIENTE!!!!!
+        ' Lectura del fichero
+        clear()
+
+        Try
+            ' Abrimos el fichero para poder leer
+            Using sr As New StreamReader(path)
+                Dim linea As String
+                ' Guardamos lo leído en un a variable linea de tipo string y lo mostramos en la consola
+                linea = sr.ReadToEnd()
+                Console.WriteLine(linea)
+            End Using
+        Catch e As Exception
+            ' Comprobamos que existe si no viene a esta parte
+            Console.WriteLine("No se puede abrir el fichero, ¿existe?")
+        End Try
+        pausar()
 
     End Sub
 
