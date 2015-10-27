@@ -14,11 +14,11 @@
         ' visualizar  la	lista	completa, en	cualquier	caso	se	podrá	introducir	un	número	y
         ' nos devolverá el	nombre	del	alumnos	que	se	tecleó	en	esa	posición.
 
-        Dim alumnos() As String = {}
+        Dim alumnos() As String
 
         Dim numAlumnos As Integer
 
-        Dim tecla As ConsoleKeyInfo
+        Dim tecla As String
 
         Do
             clear()
@@ -38,16 +38,26 @@
         Loop While numAlumnos < 0
 
         ReDim alumnos(numAlumnos)
-        clear()
-        For i As Integer = 0 To numAlumnos
-            Console.Write("Introduzca el nombre del alumno: ")
-            alumnos(i) = Console.ReadLine()
-        Next
 
-        For i As Integer = 0 To numAlumnos
+        clear()
+
+        For k As Integer = 0 To numAlumnos
+            Console.Write("Introduzca el nombre del alumno: ")
+            tecla = Console.ReadLine()
+            If tecla = Nothing Then
+                Exit For
+            Else
+                alumnos(k) = tecla
+            End If
+        Next
+        Dim i As Integer = 0
+
+        While alumnos(i) <> Nothing
             Console.WriteLine(alumnos(i))
             pausar()
-        Next
+            i += 1
+        End While
+
 
 
     End Sub
