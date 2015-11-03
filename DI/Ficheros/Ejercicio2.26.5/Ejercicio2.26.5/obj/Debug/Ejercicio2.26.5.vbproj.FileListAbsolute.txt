@@ -1,0 +1,10 @@
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.exe.config
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.exe
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.pdb
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.xml
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.vbprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2._26._5.Resources.resources
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.vbproj.GenerateResource.Cache
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.exe
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.xml
+\\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.pdb
