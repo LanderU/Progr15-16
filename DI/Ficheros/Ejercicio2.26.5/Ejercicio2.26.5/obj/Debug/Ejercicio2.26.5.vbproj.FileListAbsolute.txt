@@ -12,3 +12,9 @@ Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejerc
 Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.exe
 Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.xml
 Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.pdb
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.exe
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.pdb
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.xml
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.vbprojResolveAssemblyReference.cache
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2._26._5.Resources.resources
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.vbproj.GenerateResource.Cache

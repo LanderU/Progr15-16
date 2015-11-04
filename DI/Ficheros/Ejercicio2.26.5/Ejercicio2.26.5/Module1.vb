@@ -37,41 +37,53 @@ Module Module1
         ' Instancia
         Dim per As Persona
         per.codigo = 0
-        per.codigo += 1
-        ' Datos a guardar
-        Console.Write("Introduzca su nombre: ")
-        per.nombre = Console.ReadLine()
-        Console.Write("Introduzca su dirección: ")
-        per.direccion = Console.ReadLine()
-        Console.Write("Introduzca su teléfono: ")
-        per.telefono = Console.ReadLine()
-        Console.Write("Introduzca su edad: ")
-        per.edad = Int32.Parse(Console.ReadLine())
-        ' Le pedimos la posición del registro en la que quiere escribir
-        Console.Write("Escriba el registro en el que va a escribir: ")
-        Dim registro As Integer = Integer.Parse(Console.ReadLine())
-        ' Situamos el puntero en el principio del archivo.
-        br.BaseStream.Seek((registro - 1) * longitud, SeekOrigin.Begin)
-        ' Escribimos en el registro entero codigo+nombre+dirección+teléfono+edad = REGISTRO COMPLETO
-        ' Al declarar la constante longitud, a pesar de que no ocupemos esos bytes el registro SIEMPRE OCUPA 100
-        br.Write(per.codigo)
-        br.Write(per.nombre)
-        br.Write(per.direccion)
-        br.Write(per.telefono)
-        br.Write(per.edad)
-        ' Cerramos el flujo
-        flujo.Close()
+        Dim continuar As String
+        Do
+            limpiar()
+            per.codigo = per.codigo + 1
+            ' Datos a guardar
+            Console.Write("Introduzca su nombre: ")
+            per.nombre = Console.ReadLine()
+            Console.Write("Introduzca su dirección: ")
+            per.direccion = Console.ReadLine()
+            Console.Write("Introduzca su teléfono: ")
+            per.telefono = Console.ReadLine()
+            Console.Write("Introduzca su edad: ")
+            per.edad = Int32.Parse(Console.ReadLine())
+            ' Situamos el puntero en el lugar correspondiente
+            br.BaseStream.Seek((per.codigo - 1) * longitud, SeekOrigin.Begin)
+            ' Escribimos en el registro entero codigo+nombre+dirección+teléfono+edad = REGISTRO COMPLETO
+            ' Al declarar la constante longitud, a pesar de que no ocupemos esos bytes el registro SIEMPRE OCUPA 100
+            br.Write(per.codigo)
+            br.Write(per.nombre)
+            br.Write(per.direccion)
+            br.Write(per.telefono)
+            br.Write(per.edad)
+            Console.Write("Desea continuar metiendo datos (s/n): ")
+            continuar = Console.ReadLine()
+        Loop While continuar = "s"
+        br.Close() : flujo.Close()
         ' Regeneramos el flujo para leer
         flujo = New FileStream(path, FileMode.Open, FileAccess.Read)
         Dim lector As BinaryReader = New BinaryReader(flujo)
-        ' Leemos el registro seleccionado por el usuario
-        Console.WriteLine(lector.ReadInt32)
-        Console.WriteLine(lector.ReadString)
-        Console.WriteLine(lector.ReadString)
-        Console.WriteLine(lector.ReadString)
-        Console.WriteLine(lector.ReadInt32)
-        pausar()
-        lector.Close()
+        ' Leemos el registro seleccionado por el usuario que coincidirá con el código que ha introducido
+        limpiar()
+        Console.Write("Número de persona del que desea mostrar los datos¿?: ")
+        Dim leerRegistro As Integer = Console.ReadLine()
+        If (((leerRegistro - 1) * longitud) > flujo.Length) Then
+            Console.WriteLine("El registro no está en el fichero, te has pasado del tamaño")
+            pausar()
+        Else
+            lector.BaseStream.Seek((leerRegistro - 1) * longitud, SeekOrigin.Begin)
+            Console.WriteLine("Código: " & lector.ReadInt32)
+            Console.WriteLine("Nombre: " + lector.ReadString)
+            Console.WriteLine("Dirección: " + lector.ReadString)
+            Console.WriteLine("teléfono: " + lector.ReadString)
+            Console.WriteLine("Edad: " & lector.ReadInt32)
+            pausar()
+        End If
+        ' Cerramos los flujos
+        lector.Close() : flujo.Close()
 
     End Sub
 
