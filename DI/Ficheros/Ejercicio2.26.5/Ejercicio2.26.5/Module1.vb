@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports System.Text
 Module Module1
     Private Sub limpiar()
         Console.Clear()
@@ -48,19 +47,24 @@ Module Module1
         per.telefono = Console.ReadLine()
         Console.Write("Introduzca su edad: ")
         per.edad = Int32.Parse(Console.ReadLine())
-
-        ' Escribimos en el fichero
+        ' Le pedimos la posición del registro en la que quiere escribir
+        Console.Write("Escriba el registro en el que va a escribir: ")
+        Dim registro As Integer = Integer.Parse(Console.ReadLine())
+        ' Situamos el puntero en el principio del archivo.
+        br.BaseStream.Seek((registro - 1) * longitud, SeekOrigin.Begin)
+        ' Escribimos en el registro entero codigo+nombre+dirección+teléfono+edad = REGISTRO COMPLETO
+        ' Al declarar la constante longitud, a pesar de que no ocupemos esos bytes el registro SIEMPRE OCUPA 100
         br.Write(per.codigo)
         br.Write(per.nombre)
         br.Write(per.direccion)
         br.Write(per.telefono)
         br.Write(per.edad)
-        ' Cerrmos el flujo
+        ' Cerramos el flujo
         flujo.Close()
         ' Regeneramos el flujo para leer
         flujo = New FileStream(path, FileMode.Open, FileAccess.Read)
         Dim lector As BinaryReader = New BinaryReader(flujo)
-        ' Leemos el fichero
+        ' Leemos el registro seleccionado por el usuario
         Console.WriteLine(lector.ReadInt32)
         Console.WriteLine(lector.ReadString)
         Console.WriteLine(lector.ReadString)

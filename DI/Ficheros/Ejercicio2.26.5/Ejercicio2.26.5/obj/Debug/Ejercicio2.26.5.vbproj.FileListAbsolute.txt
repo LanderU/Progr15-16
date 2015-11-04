@@ -8,3 +8,7 @@
 \\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.exe
 \\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.xml
 \\psf\home\documents\visual studio 2015\Projects\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.pdb
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\bin\Debug\Ejercicio2.26.5.exe.config
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.exe
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.xml
+Y:\github\Progr15-16\DI\Ficheros\Ejercicio2.26.5\Ejercicio2.26.5\obj\Debug\Ejercicio2.26.5.pdb
