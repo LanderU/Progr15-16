@@ -6,8 +6,8 @@ Solucionamos las dependencias:
 `sudo apt-get install bzr bzrtools graphviz postgresql postgresql-client-common python python-dateutil python-dev python-egenix-mxdatetime python-egenix-mxdatetime python-feedparser python-gdata python-hippocanvas python-imaging python-ldap python-libxml2 python-libxslt1 python-lxml python-mako python-matplotlib python-numpy python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-setuptools python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-psutil python-docutils docutils-common docutils-doc python-jinja2 python-mock python-pygments python-roman python-unittest2 openssl xmlstarlet xsltproc python-soappy git python-decorator python-pypdf`
 
 Comprobamos la versión de postreSqpl instalada:
-'''
-lander@lander:~$ sudo su postgres 
+
+'''lander@lander:~$ sudo su postgres 
 postgres@lander:/home/lander$ psql --version
 psql (PostgreSQL) 9.4.5
 lander@lander:/home/lander$ exit
