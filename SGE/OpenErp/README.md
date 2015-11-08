@@ -31,7 +31,7 @@ Para saber el estado en el que se encuentra el servicio:
 `sudo service postgresql status`
 
 Y la salida tendría que ser algo así (si todo va bien):
-'''
+```
 ● postgresql.service - PostgreSQL RDBMS
    Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
    Active: active (exited) since dom 2015-11-08 11:15:52 CET; 2min 40s ago
@@ -40,21 +40,21 @@ Y la salida tendría que ser algo así (si todo va bien):
 
 nov 08 11:15:52 lander systemd[1]: Starting PostgreSQL RDBMS...
 nov 08 11:15:52 lander systemd[1]: Started PostgreSQL RDBMS.
-'''
+```
 
 Creamos los usuarios tanto en *postgres* como en el propio *sistema*.
 
 Creación del usuario postgres:
 
 `sudo su postgres`
-'''
+```
 postgres@lander:/home/lander$ createuser -d -R -S -P openerp
 Enter password for new role: 
 Enter it again: 
-'''
+```
 
 Creación del usuario en el sistema:
-'''
+```
 lander@lander:~$ sudo adduser openerp
 Añadiendo el usuario `openerp' ...
 Añadiendo el nuevo grupo `openerp' (1001) ...
@@ -72,7 +72,7 @@ Introduzca el nuevo valor, o presione INTRO para el predeterminado
 	Teléfono de casa []: 
 	Otro []: 
 ¿Es correcta la información? [S/n] S
-'''
+```
 
 
  
