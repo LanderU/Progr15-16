@@ -1,4 +1,4 @@
-# Instalar **OpenErp** bajo Ubuntu 15.10 file system (wily)
+# Instalar **OpenErp** bajo Ubuntu 15.10 fs (wily)
 ------------------------------------------------------------
 
 Solucionamos las dependencias:
