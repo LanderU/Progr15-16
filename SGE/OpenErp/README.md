@@ -135,7 +135,7 @@ Para que el servicio se ejecute siempre al inicio vamos a crear el demonio, (añ
 
 `sudo update-rc.d openerp-server defaults`
 
-`sudo service start|stop|restart|status opener-service` para conocer el estado del servicio.
+`sudo service start|stop|restart|status opener-server` para conocer el estado del servicio.
 
 
 
