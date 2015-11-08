@@ -7,10 +7,13 @@ Solucionamos las dependencias:
 
 Comprobamos la versión de postreSqpl instalada:
 
-'''lander@lander:~$ sudo su postgres 
+'''
+
+lander@lander:~$ sudo su postgres 
 postgres@lander:/home/lander$ psql --version
 psql (PostgreSQL) 9.4.5
 lander@lander:/home/lander$ exit
+
 '''
 Editamos el archivo de configuración correspondiente a nuestra versión: 
 
