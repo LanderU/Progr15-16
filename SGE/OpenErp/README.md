@@ -73,6 +73,73 @@ Introduzca el nuevo valor, o presione INTRO para el predeterminado
 	Otro []: 
 ¿Es correcta la información? [S/n] S
 ```
+Creamos una estructura de carpetas donde nos clonaremos el respistorio de GitHub de Odoo:
+
+Cambiamos de usuario,
+
+```
+lander@lander:~$ sudo su openerp 
+openerp@lander:/home/lander$
+openerp@lander:/home/lander$ mkdir /home/openerp/odoo -p
+openerp@lander:/home/lander$ cd /home/openerp/odoo/
+openerp@lander:~/odoo$
+```
+
+Instalamos git:
+
+`sudo apt-get install git`
+
+Y nos clonamos el repositorio de git de Odoo en la estructura de carpetas que hemos creado:
+
+`git clone https://github.com/odoo/odoo.git`
+
+Una vez se ha clonado, nos movemos al branch correspondiente **7.0**:
+
+Por defecto nos encontramos en el siguiente branch:
+```
+openerp@lander:~/odoo/odoo$ git branch
+* 9.0
+```
+
+`git checkout 7.0`
+
+```
+openerp@lander:~/odoo/odoo$ git checkout 7.0
+Branch 7.0 set up to track remote branch 7.0 from origin.
+Switched to a new branch '7.0'
+openerp@lander:~/odoo/odoo$ git branch
+* 7.0
+  9.0
+```
+
+Ejecutamos el servidor para que empieze a escuchar: 
+
+```
+openerp@lander:~/odoo/odoo$ ./openerp-server -w openerp -r openerp --addons-path=addons -s
+2015-11-08 11:42:22,753 6855 INFO ? openerp: OpenERP version 7.0
+2015-11-08 11:42:22,754 6855 INFO ? openerp: addons paths: /home/openerp/odoo/odoo/addons
+2015-11-08 11:42:22,754 6855 INFO ? openerp: database hostname: localhost
+2015-11-08 11:42:22,754 6855 INFO ? openerp: database port: 5432
+2015-11-08 11:42:22,754 6855 INFO ? openerp: database user: openerp
+2015-11-08 11:42:23,715 6855 INFO ? openerp.addons.google_docs.google_docs: GData lib version `%s GData-Python/2.0.18` detected
+2015-11-08 11:42:24,353 6855 INFO ? openerp.service.wsgi_server: HTTP service (werkzeug) running on 0.0.0.0:8069
+```
+
+Una vez hecho esto y para empezar a configurar, nuestro erp, abrimos un navegador y escribimos 127.0.0.1:8069 en la barra de direcciones.
+
+Para que el servicio se ejecute siempre al inicio vamos a crear el demonio, (añado el script en el repo):
+
+`sudo mv openerp-service /etc/init.d/` 
+
+`sudo chmod +x /etc/init.d/openerp-service`
+
+`sudo update-rc.d openerp-server defaults`
+
+`sudo service start|stop|restart|status opener-service` para conocer el estado del servicio.
+
+
+
+
 
 
  
