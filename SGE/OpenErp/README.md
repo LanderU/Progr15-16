@@ -129,9 +129,9 @@ Una vez hecho esto y para empezar a configurar, nuestro erp, abrimos un navegado
 
 Para que el servicio se ejecute siempre al inicio vamos a crear el demonio, (añado el script en el repo):
 
-`sudo mv openerp-service /etc/init.d/` 
+`sudo mv openerp-server /etc/init.d/` 
 
-`sudo chmod +x /etc/init.d/openerp-service`
+`sudo chmod +x /etc/init.d/openerp-server`
 
 `sudo update-rc.d openerp-server defaults`
 
