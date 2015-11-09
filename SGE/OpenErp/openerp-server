@@ -18,11 +18,11 @@ DESC=openerp-server
 SERVEREXE=openerp-server
  
 LOG=TRUE
-# path al directorio de instancias de OpenERP
-OERPPATH=/home/openerp/instancias
+# path al directorio de openerp
+OERPPATH=/home/openerp/odoo
  
 # Default OpenERP server python executable
-DAEMON=${OERPPATH}/estable/odoo/server/${SERVEREXE}
+DAEMON=${OERPPATH}/odoo/server/${SERVEREXE}
  
 # Default server config file
 CONFIGFILE=${OERPPATH}/config/estable_70.conf
