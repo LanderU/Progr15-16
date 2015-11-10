@@ -1,0 +1,10 @@
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\bin\Debug\PruebaExamen1.exe.config
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\bin\Debug\PruebaExamen1.exe
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\bin\Debug\PruebaExamen1.pdb
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\bin\Debug\PruebaExamen1.xml
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.vbprojResolveAssemblyReference.cache
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.Resources.resources
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.vbproj.GenerateResource.Cache
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.exe
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.xml
+\\psf\home\documents\visual studio 2015\Projects\PruebaExamen1\PruebaExamen1\obj\Debug\PruebaExamen1.pdb
