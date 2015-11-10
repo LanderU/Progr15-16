@@ -52,7 +52,7 @@
         clear()
         Console.WriteLine("Orden de entrada de los datos: ")
         For l As Integer = 0 To arrayRandom.getUpperBound(0)
-            Console.WriteLine("Posicion: " & l + 1 & " " & arrayRandom(l))
+            Console.WriteLine("En la posición--> " & l + 1 & ", está el dato--> " & arrayRandom(l))
             pausar()
         Next
         Console.WriteLine("Orden inverso de entrada de los datos: ")
@@ -60,7 +60,7 @@
         Dim i As Integer = arrayRandom.GetUpperBound(0)
 
         While i >= 0
-            Console.WriteLine("En la posición: " & i + 1 & " " & arrayRandom(i))
+            Console.WriteLine("En la posición--> " & i + 1 & ", está el dato--> " & arrayRandom(i))
             pausar()
             i -= 1
 
