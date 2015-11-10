@@ -6,6 +6,7 @@
         Threading.Thread.Sleep(2000)
     End Sub
     Private Sub entradaDeDatoConAjusteArray()
+        
         Dim dato As String
         Dim arrayRandom() As Object
         Do
