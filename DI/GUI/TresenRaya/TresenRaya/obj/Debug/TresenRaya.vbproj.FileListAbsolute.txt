@@ -1,0 +1,11 @@
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\bin\Debug\TresenRaya.exe.config
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\bin\Debug\TresenRaya.exe
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\bin\Debug\TresenRaya.pdb
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\bin\Debug\TresenRaya.xml
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.Form1.resources
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.Resources.resources
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.vbproj.GenerateResource.Cache
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.exe
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.xml
+\\psf\home\documents\visual studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.pdb
+\\psf\Home\Documents\Visual Studio 2015\Projects\TresenRaya\TresenRaya\obj\Debug\TresenRaya.vbprojResolveAssemblyReference.cache
