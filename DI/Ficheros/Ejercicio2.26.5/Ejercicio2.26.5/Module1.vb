@@ -67,21 +67,27 @@ Module Module1
         flujo = New FileStream(path, FileMode.Open, FileAccess.Read)
         Dim lector As BinaryReader = New BinaryReader(flujo)
         ' Leemos el registro seleccionado por el usuario que coincidirá con el código que ha introducido
-        limpiar()
-        Console.Write("Número de persona del que desea mostrar los datos¿?: ")
-        Dim leerRegistro As Integer = Console.ReadLine()
-        If (((leerRegistro - 1) * longitud) > flujo.Length) Then
-            Console.WriteLine("El registro no está en el fichero, te has pasado del tamaño")
-            pausar()
-        Else
-            lector.BaseStream.Seek((leerRegistro - 1) * longitud, SeekOrigin.Begin)
-            Console.WriteLine("Código: " & lector.ReadInt32)
-            Console.WriteLine("Nombre: " + lector.ReadString)
-            Console.WriteLine("Dirección: " + lector.ReadString)
-            Console.WriteLine("teléfono: " + lector.ReadString)
-            Console.WriteLine("Edad: " & lector.ReadInt32)
-            pausar()
-        End If
+        Do
+            limpiar()
+            Console.Write("Número de persona del que desea mostrar los datos¿?: ")
+            Dim leerRegistro As Integer = Console.ReadLine()
+            If (((leerRegistro - 1) * longitud) > flujo.Length) Then
+                Console.WriteLine("El registro no está en el fichero, te has pasado del tamaño")
+                pausar()
+            Else
+                lector.BaseStream.Seek((leerRegistro - 1) * longitud, SeekOrigin.Begin)
+                Console.WriteLine("Código: " & lector.ReadInt32)
+                Console.WriteLine("Nombre: " + lector.ReadString)
+                Console.WriteLine("Dirección: " + lector.ReadString)
+                Console.WriteLine("teléfono: " + lector.ReadString)
+                Console.WriteLine("Edad: " & lector.ReadInt32)
+                pausar()
+            End If
+            Console.Write("Desea continuar: s/n: ")
+            continuar = Console.ReadLine()
+        Loop While continuar <> "n"
+
+
         ' Cerramos los flujos
         lector.Close() : flujo.Close()
 

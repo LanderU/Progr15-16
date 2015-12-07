@@ -18,11 +18,19 @@ DESC=openerp-server
 SERVEREXE=openerp-server
  
 LOG=TRUE
+<<<<<<< HEAD
 # path al directorio de instancias de OpenERP
 OERPPATH=/home/openerp/odoo/odoo
  
 # Default OpenERP server python executable
 DAEMON=${OERPPATH}/${SERVEREXE}
+=======
+# path al directorio de openerp
+OERPPATH=/home/openerp/odoo
+ 
+# Default OpenERP server python executable
+DAEMON=${OERPPATH}/odoo/server/${SERVEREXE}
+>>>>>>> 8c9e537c6c7d7a0b5bbf8263b2fa7418f653871a
  
 # Default server config file
 CONFIGFILE=${OERPPATH}

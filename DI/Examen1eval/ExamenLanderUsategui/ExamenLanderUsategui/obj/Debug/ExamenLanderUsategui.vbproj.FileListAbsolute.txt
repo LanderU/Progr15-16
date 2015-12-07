@@ -1,0 +1,20 @@
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.exe.config
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.exe
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.pdb
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.xml
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.vbprojResolveAssemblyReference.cache
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.Resources.resources
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.vbproj.GenerateResource.Cache
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.exe
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.xml
+c:\users\8fdiexa15\documents\visual studio 2015\Projects\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.pdb
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.exe.config
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.exe
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.xml
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.pdb
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.exe
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.pdb
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\bin\Debug\ExamenLanderUsategui.xml
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.vbprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.Resources.resources
+\\psf\Home\Desktop\ExamenLanderUsategui\ExamenLanderUsategui\ExamenLanderUsategui\obj\Debug\ExamenLanderUsategui.vbproj.GenerateResource.Cache
