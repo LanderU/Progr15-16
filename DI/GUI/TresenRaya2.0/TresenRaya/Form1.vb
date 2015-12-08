@@ -15,7 +15,7 @@
     ' Comprobar ganador
     Private Sub checkWinner(ByRef contador As Integer)
 
-        If contador > 5 And contador < 9 Then
+        If contador > 5 And contador <= 9 Then
             If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
                 MsgBox("Jugador 1 gana la partida")
                 Close()
@@ -67,9 +67,6 @@
                 Close()
 
             End If
-        ElseIf contador = 9
-            MsgBox("Empate")
-            Close()
         End If
 
 
