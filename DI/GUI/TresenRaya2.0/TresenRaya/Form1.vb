@@ -13,57 +13,66 @@
     'Contado
     Private contador As Integer = 0
     ' Comprobar ganador
-    Private Sub checkWinner()
-        If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 0) = 1 And controlGanador(2, 0) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 2) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(1, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(1, 2) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(2, 0) = 1 And controlGanador(2, 1) = 1 And controlGanador(2, 2) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(2, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(0, 2) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 2) = 1 And controlGanador(1, 2) = 1 And controlGanador(2, 2) = 1
-            MsgBox("Jugador 1 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 1) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 1) = 1
-            MsgBox("Jugadr 1 gana la partida")
-            Close()
-            ' Comprobar Jugador 2
-        ElseIf controlGanador(0, 0) = 2 And controlGanador(0, 1) = 2 And controlGanador(0, 2) = 2 Then
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 0) = 2 And controlGanador(2, 0) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 2) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(1, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(1, 2) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(2, 0) = 2 And controlGanador(2, 1) = 2 And controlGanador(2, 2) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(2, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(0, 2) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 2) = 2 And controlGanador(1, 2) = 2 And controlGanador(2, 2) = 2
-            MsgBox("Jugador 2 gana la partida")
-            Close()
-        ElseIf controlGanador(0, 1) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 1) = 2
-            MsgBox("Jugador 2 gana la partida")
+    Private Sub checkWinner(ByRef contador As Integer)
+
+        If contador > 5 And contador < 9 Then
+            If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 0) = 1 And controlGanador(2, 0) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 2) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(1, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(1, 2) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(2, 0) = 1 And controlGanador(2, 1) = 1 And controlGanador(2, 2) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(2, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(0, 2) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 2) = 1 And controlGanador(1, 2) = 1 And controlGanador(2, 2) = 1
+                MsgBox("Jugador 1 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 1) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 1) = 1
+                MsgBox("Jugadr 1 gana la partida")
+                Close()
+                ' Comprobar Jugador 2
+            ElseIf controlGanador(0, 0) = 2 And controlGanador(0, 1) = 2 And controlGanador(0, 2) = 2 Then
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 0) = 2 And controlGanador(2, 0) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 2) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(1, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(1, 2) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(2, 0) = 2 And controlGanador(2, 1) = 2 And controlGanador(2, 2) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(2, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(0, 2) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 2) = 2 And controlGanador(1, 2) = 2 And controlGanador(2, 2) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+            ElseIf controlGanador(0, 1) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 1) = 2
+                MsgBox("Jugador 2 gana la partida")
+                Close()
+
+            End If
+        ElseIf contador = 9
+            MsgBox("Empate")
             Close()
         End If
+
+
 
     End Sub
 
@@ -105,9 +114,8 @@
         Button1.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
+
 
     End Sub
 
@@ -137,9 +145,7 @@
         Button2.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
 
 
     End Sub
@@ -169,9 +175,7 @@
         Button3.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -200,9 +204,7 @@
         Button4.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -231,9 +233,7 @@
         Button5.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -262,9 +262,7 @@
         Button6.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -293,9 +291,7 @@
         Button7.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -324,9 +320,7 @@
         Button8.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
@@ -355,8 +349,6 @@
         Button9.Enabled = False
         contador += 1
         Label4.Text = CStr(contador)
-        If contador > 5 Then
-            checkWinner()
-        End If
+        checkWinner(contador)
     End Sub
 End Class
