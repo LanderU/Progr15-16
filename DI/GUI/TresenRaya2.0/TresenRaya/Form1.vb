@@ -1,4 +1,31 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Imports System.Text
+Imports System
+Public Class Form1
+    ' Guardamos en un fichero la cantidad de veces que ha ganado un jugador
+    Private Sub partidasGanadasJugador1()
+        Dim path As String = "C:\users\Public\ganadorJugador1.txt"
+        'Dim fichero As FileStream = File.Create(path)
+
+        ' Dim kk As Byte()
+        'kk = New UTF8Encoding(True).GetBytes(1)
+        'fichero.Write(kk, 0, kk.Length)
+        'fichero.Close()
+
+        Dim infoReader As FileInfo
+        infoReader = My.Computer.FileSystem.GetFileInfo(path)
+        Console.WriteLine(infoReader.Length)
+        MsgBox(infoReader.Length)
+
+
+
+    End Sub
+    Private Sub partidasGanadasJugador2(ByRef winner As Int32)
+        Dim path As String = "C:\users\Public\ganadorJugador2.txt"
+
+
+
+    End Sub
     ' Matriz para conocer el ganador
     Private controlGanador(2, 2) As Integer
     ' Colores para los jugadores
@@ -15,7 +42,7 @@
     ' Comprobar ganador
     Private Sub checkWinner(ByRef contador As Integer)
 
-        If contador > 5 And contador <= 9 Then
+        If contador >= 5 And contador <= 9 Then
             If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
                 MsgBox("Jugador 1 gana la partida")
                 Close()
@@ -83,6 +110,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Visible = False
         Label4.Text = CStr(contador)
+        partidasGanadasJugador1()
 
     End Sub
 
