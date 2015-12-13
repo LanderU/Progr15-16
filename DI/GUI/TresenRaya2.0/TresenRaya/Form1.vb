@@ -5,7 +5,14 @@ Public Class Form1
     ' Guardamos en un fichero la cantidad de veces que ha ganado un jugador
     Private Sub partidasGanadasJugador1()
         Dim path As String = "C:\users\Public\ganadorJugador1.txt"
-        'Dim fichero As FileStream = File.Create(path)
+
+        If File.Exists(path) Then
+            File.OpenWrite(path)
+
+        Else
+            Dim fichero As FileStream = File.Create(path)
+
+        End If
 
         ' Dim kk As Byte()
         'kk = New UTF8Encoding(True).GetBytes(1)
