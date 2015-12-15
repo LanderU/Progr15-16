@@ -8,9 +8,11 @@ Public Class Form1
 
         If File.Exists(path) Then
             File.OpenWrite(path)
+            MsgBox("Hola")
 
         Else
             Dim fichero As FileStream = File.Create(path)
+            MsgBox("Adios")
 
         End If
 
@@ -382,5 +384,43 @@ Public Class Form1
         contador += 1
         Label4.Text = CStr(contador)
         checkWinner(contador)
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        'Reiniciamos el color y ponemos accesible el botón
+        Button1.BackColor = BackColor
+        Button1.Enabled = True
+        Button2.BackColor = BackColor
+        Button2.Enabled = True
+        Button3.BackColor = BackColor
+        Button3.Enabled = True
+        Button4.BackColor = BackColor
+        Button4.Enabled = True
+        Button5.BackColor = BackColor
+        Button5.Enabled = True
+        Button6.BackColor = BackColor
+        Button6.Enabled = True
+        Button7.BackColor = BackColor
+        Button7.Enabled = True
+        Button8.BackColor = BackColor
+        Button8.Enabled = True
+        Button9.BackColor = BackColor
+        Button9.Enabled = True
+
+        ' Reiniciamos el turno
+        Label1.Visible = True
+        Label2.Visible = False
+        ' Volvemos a poner el turno al jugador 1
+        turno = 1
+
+
+
+
+
+
+
+
+
+
     End Sub
 End Class
