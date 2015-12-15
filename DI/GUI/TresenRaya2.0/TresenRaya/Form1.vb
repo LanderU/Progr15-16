@@ -54,54 +54,53 @@ Public Class Form1
         If contador >= 5 And contador <= 9 Then
             If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 0) = 1 And controlGanador(2, 0) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(1, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(1, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(2, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(0, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 2) = 1 And controlGanador(1, 2) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 1) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 1) = 1
                 MsgBox("Jugadr 1 gana la partida")
-                Close()
+                'Close()
                 ' Comprobar Jugador 2
             ElseIf controlGanador(0, 0) = 2 And controlGanador(0, 1) = 2 And controlGanador(0, 2) = 2 Then
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 0) = 2 And controlGanador(2, 0) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(1, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(1, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(2, 1) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(0, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 2) = 2 And controlGanador(1, 2) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
+                'Close()
             ElseIf controlGanador(0, 1) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 1) = 2
                 MsgBox("Jugador 2 gana la partida")
-                Close()
-
+                'Close()
             End If
         End If
 
@@ -118,7 +117,6 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Visible = False
-        Label4.Text = CStr(contador)
         partidasGanadasJugador1()
 
     End Sub
@@ -413,8 +411,10 @@ Public Class Form1
         ' Volvemos a poner el turno al jugador 1
         turno = 1
 
+        ' Pisamos los datos del array
+        ReDim controlGanador(2, 2)
 
-
+        contador = 0
 
 
 
