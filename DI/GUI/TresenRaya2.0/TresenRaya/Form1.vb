@@ -3,13 +3,20 @@ Imports System.Text
 Imports System
 Public Class Form1
     ' Guardamos en un fichero la cantidad de veces que ha ganado un jugador
+    Dim pathJ1 As String = "C:\users\Public\ganadorJugador1.txt"
+    Dim pathJ2 As String = "C:\users\Public\ganadorJugador2.txt"
     Private Sub partidasGanadasJugador1()
-        Dim path As String = "C:\users\Public\ganadorJugador1.txt"
-        'Si el archivo no existe lo creamos.
-        Dim fichero As FileStream
-        If Not File.Exists(path) Then
 
-            fichero = File.Create(path)
+        'Si el archivo no existe lo creamos y lo rellenamos con un 0.
+        Dim fichero As FileStream
+        Dim contGanador As Byte()
+
+        If Not File.Exists(pathJ1) Then
+
+            fichero = File.Create(pathJ1)
+            contGanador = New UTF8Encoding(True).GetBytes(0)
+            fichero.Write(contGanador, 0, contGanador.Length)
+            fichero.Close()
 
         End If
         ' Empezamos a operar sobre él
@@ -17,35 +24,46 @@ Public Class Form1
         'kk = New UTF8Encoding(True).GetBytes(1)
         'fichero.Write(kk, 0, kk.Length)
         'fichero.Close()
-        Dim contGanador As Byte()
 
-        Dim infoReader As FileInfo
-        infoReader = My.Computer.FileSystem.GetFileInfo(path)
-        If infoReader.Length = 0 Then
-            contGanador = New UTF8Encoding(True).GetBytes(0)
-            fichero.Write(contGanador, 0, contGanador.Length)
-            fichero.Close()
-        Else
-            Using leer As New StreamReader(path)
-                Dim linea As Integer = leer.ReadToEnd()
-                linea += 1
-                leer.Close()
-
-
-
-            End Using
-
-
-
-
-        End If
-
+        Using leer As New StreamReader(pathJ1)
+            Dim linea As Integer = leer.ReadToEnd()
+            ' MsgBox(linea) debug
+            linea += 1
+            leer.Close()
+            'Metodo para sobreescriir el archivo, el último parámetro True = Append False = sobreescribir
+            My.Computer.FileSystem.WriteAllText(pathJ1, linea, False)
+        End Using
 
 
 
     End Sub
-    Private Sub partidasGanadasJugador2(ByRef winner As Int32)
-        Dim path As String = "C:\users\Public\ganadorJugador2.txt"
+    Private Sub partidasGanadasJugador2()
+        'Si el archivo no existe lo creamos y lo rellenamos con un 0.
+        Dim fichero As FileStream
+        Dim contGanador As Byte()
+
+        If Not File.Exists(pathJ2) Then
+
+            fichero = File.Create(pathJ2)
+            contGanador = New UTF8Encoding(True).GetBytes(0)
+            fichero.Write(contGanador, 0, contGanador.Length)
+            fichero.Close()
+
+        End If
+        ' Empezamos a operar sobre él
+        'Dim kk As Byte()
+        'kk = New UTF8Encoding(True).GetBytes(1)
+        'fichero.Write(kk, 0, kk.Length)
+        'fichero.Close()
+
+        Using leer As New StreamReader(pathJ2)
+            Dim linea As Integer = leer.ReadToEnd()
+            ' MsgBox(linea) debug
+            linea += 1
+            leer.Close()
+            'Metodo para sobreescriir el archivo, el último parámetro True = Append False = sobreescribir
+            My.Computer.FileSystem.WriteAllText(pathJ2, linea, False)
+        End Using
 
 
 
@@ -69,52 +87,68 @@ Public Class Form1
         If contador >= 5 And contador <= 9 Then
             If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 0) = 1 And controlGanador(2, 0) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(1, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(1, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(2, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(0, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(0, 2) = 1 And controlGanador(1, 2) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
             ElseIf controlGanador(0, 1) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 1) = 1
                 MsgBox("Jugadr 1 gana la partida")
+                partidasGanadasJugador1()
                 'Close()
                 ' Comprobar Jugador 2
             ElseIf controlGanador(0, 0) = 2 And controlGanador(0, 1) = 2 And controlGanador(0, 2) = 2 Then
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 0) = 2 And controlGanador(2, 0) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(1, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(1, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(2, 1) = 2 And controlGanador(2, 2) = 2
+                partidasGanadasJugador2()
                 MsgBox("Jugador 2 gana la partida")
                 'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(0, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(0, 2) = 2 And controlGanador(1, 2) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             ElseIf controlGanador(0, 1) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 1) = 2
                 MsgBox("Jugador 2 gana la partida")
+                partidasGanadasJugador2()
                 'Close()
             End If
         End If
@@ -132,7 +166,6 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Visible = False
-        partidasGanadasJugador1()
 
     End Sub
 
@@ -190,7 +223,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button2.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
 
 
@@ -220,7 +252,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button3.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -249,7 +280,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button4.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -278,7 +308,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button5.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -307,7 +336,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button6.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -336,7 +364,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button7.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -365,7 +392,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button8.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -394,7 +420,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button9.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
     End Sub
 
@@ -436,5 +461,49 @@ Public Class Form1
 
 
 
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        ' Mostramos en una ventana emergente las veces que ha ganado el jugador 1.
+        'Si el archivo no existe lo creamos y lo rellenamos con un 0.
+        Dim fichero As FileStream
+        Dim contGanador As Byte()
+
+        If Not File.Exists(pathJ1) Then
+
+            fichero = File.Create(pathJ1)
+            contGanador = New UTF8Encoding(True).GetBytes(0)
+            fichero.Write(contGanador, 0, contGanador.Length)
+            fichero.Close()
+
+        End If
+
+        Using leer As New StreamReader(pathJ1)
+            Dim linea As Integer = leer.ReadToEnd()
+            MsgBox(linea)
+            leer.Close()
+        End Using
+
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        ' Mostramos en una ventana emergente las veces que ha ganado el jugador 2.
+        'Si el archivo no existe lo creamos y lo rellenamos con un 0.
+        Dim fichero As FileStream
+        Dim contGanador As Byte()
+
+        If Not File.Exists(pathJ2) Then
+
+            fichero = File.Create(pathJ2)
+            contGanador = New UTF8Encoding(True).GetBytes(0)
+            fichero.Write(contGanador, 0, contGanador.Length)
+            fichero.Close()
+
+        End If
+        Using leer As New StreamReader(pathJ2)
+            Dim linea As Integer = leer.ReadToEnd()
+            MsgBox(linea)
+            leer.Close()
+        End Using
     End Sub
 End Class
