@@ -5,26 +5,41 @@ Public Class Form1
     ' Guardamos en un fichero la cantidad de veces que ha ganado un jugador
     Private Sub partidasGanadasJugador1()
         Dim path As String = "C:\users\Public\ganadorJugador1.txt"
+        'Si el archivo no existe lo creamos.
+        Dim fichero As FileStream
+        If Not File.Exists(path) Then
 
-        If File.Exists(path) Then
-            File.OpenWrite(path)
-            MsgBox("Hola")
-
-        Else
-            Dim fichero As FileStream = File.Create(path)
-            MsgBox("Adios")
+            fichero = File.Create(path)
 
         End If
-
-        ' Dim kk As Byte()
+        ' Empezamos a operar sobre él
+        'Dim kk As Byte()
         'kk = New UTF8Encoding(True).GetBytes(1)
         'fichero.Write(kk, 0, kk.Length)
         'fichero.Close()
+        Dim contGanador As Byte()
 
         Dim infoReader As FileInfo
         infoReader = My.Computer.FileSystem.GetFileInfo(path)
-        Console.WriteLine(infoReader.Length)
-        MsgBox(infoReader.Length)
+        If infoReader.Length = 0 Then
+            contGanador = New UTF8Encoding(True).GetBytes(0)
+            fichero.Write(contGanador, 0, contGanador.Length)
+            fichero.Close()
+        Else
+            Using leer As New StreamReader(path)
+                Dim linea As Integer = leer.ReadToEnd()
+                linea += 1
+                leer.Close()
+
+
+
+            End Using
+
+
+
+
+        End If
+
 
 
 
@@ -145,7 +160,6 @@ Public Class Form1
         ' Deshabilitamos el botón
         Button1.Enabled = False
         contador += 1
-        Label4.Text = CStr(contador)
         checkWinner(contador)
 
 
