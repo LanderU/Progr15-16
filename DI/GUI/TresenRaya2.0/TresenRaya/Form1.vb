@@ -81,6 +81,20 @@ Public Class Form1
     Private turno As Integer = 1
     'Contado
     Private contador As Integer = 0
+    ' Deshabilitar botones cuando la partida se ha terminado
+    Private Sub deshabilitar()
+        Button1.Enabled = False
+        Button2.Enabled = False
+        Button3.Enabled = False
+        Button4.Enabled = False
+        Button5.Enabled = False
+        Button6.Enabled = False
+        Button7.Enabled = False
+        Button8.Enabled = False
+        Button9.Enabled = False
+
+
+    End Sub
     ' Comprobar ganador
     Private Sub checkWinner(ByRef contador As Integer)
 
@@ -88,67 +102,83 @@ Public Class Form1
             If controlGanador(0, 0) = 1 And controlGanador(0, 1) = 1 And controlGanador(0, 2) = 1 Then
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 0) = 1 And controlGanador(2, 0) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(1, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(1, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(2, 1) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(2, 0) = 1 And controlGanador(1, 1) = 1 And controlGanador(0, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 2) = 1 And controlGanador(1, 2) = 1 And controlGanador(2, 2) = 1
                 MsgBox("Jugador 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 1) = 1 And controlGanador(1, 1) = 1 And controlGanador(2, 1) = 1
                 MsgBox("Jugadr 1 gana la partida")
                 partidasGanadasJugador1()
+                deshabilitar()
                 'Close()
                 ' Comprobar Jugador 2
             ElseIf controlGanador(0, 0) = 2 And controlGanador(0, 1) = 2 And controlGanador(0, 2) = 2 Then
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 0) = 2 And controlGanador(2, 0) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(1, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(1, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(2, 1) = 2 And controlGanador(2, 2) = 2
                 partidasGanadasJugador2()
                 MsgBox("Jugador 2 gana la partida")
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(2, 0) = 2 And controlGanador(1, 1) = 2 And controlGanador(0, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 2) = 2 And controlGanador(1, 2) = 2 And controlGanador(2, 2) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             ElseIf controlGanador(0, 1) = 2 And controlGanador(1, 1) = 2 And controlGanador(2, 1) = 2
                 MsgBox("Jugador 2 gana la partida")
                 partidasGanadasJugador2()
+                deshabilitar()
                 'Close()
             End If
         End If
