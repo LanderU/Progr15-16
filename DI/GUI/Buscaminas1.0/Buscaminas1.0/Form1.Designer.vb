@@ -75,6 +75,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(247, 91)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(32, 23)
@@ -83,6 +84,7 @@ Partial Class Form1
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(285, 91)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(32, 23)
@@ -91,6 +93,7 @@ Partial Class Form1
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(323, 91)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(32, 23)
@@ -99,6 +102,7 @@ Partial Class Form1
         '
         'Button4
         '
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(361, 91)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(32, 23)
@@ -107,6 +111,7 @@ Partial Class Form1
         '
         'Button5
         '
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(399, 91)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(32, 23)
@@ -115,6 +120,7 @@ Partial Class Form1
         '
         'Button6
         '
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(437, 91)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(32, 23)
@@ -123,6 +129,7 @@ Partial Class Form1
         '
         'Button7
         '
+        Me.Button7.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.Location = New System.Drawing.Point(247, 120)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(32, 23)
@@ -131,6 +138,7 @@ Partial Class Form1
         '
         'Button8
         '
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.Location = New System.Drawing.Point(285, 120)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(32, 23)
@@ -139,6 +147,7 @@ Partial Class Form1
         '
         'Button9
         '
+        Me.Button9.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Location = New System.Drawing.Point(323, 120)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(32, 23)
@@ -147,6 +156,7 @@ Partial Class Form1
         '
         'Button10
         '
+        Me.Button10.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(361, 120)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(32, 23)
@@ -155,6 +165,7 @@ Partial Class Form1
         '
         'Button11
         '
+        Me.Button11.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(399, 120)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(32, 23)
@@ -163,6 +174,7 @@ Partial Class Form1
         '
         'Button12
         '
+        Me.Button12.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Location = New System.Drawing.Point(437, 120)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(32, 23)
@@ -171,6 +183,7 @@ Partial Class Form1
         '
         'Button13
         '
+        Me.Button13.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.Location = New System.Drawing.Point(247, 149)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(32, 23)
@@ -179,6 +192,7 @@ Partial Class Form1
         '
         'Button14
         '
+        Me.Button14.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button14.Location = New System.Drawing.Point(285, 149)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(32, 23)
@@ -187,6 +201,7 @@ Partial Class Form1
         '
         'Button15
         '
+        Me.Button15.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.Location = New System.Drawing.Point(323, 149)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(32, 23)
@@ -195,6 +210,7 @@ Partial Class Form1
         '
         'Button16
         '
+        Me.Button16.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button16.Location = New System.Drawing.Point(361, 149)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(32, 23)
@@ -203,6 +219,7 @@ Partial Class Form1
         '
         'Button17
         '
+        Me.Button17.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button17.Location = New System.Drawing.Point(399, 149)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(32, 23)
@@ -211,6 +228,7 @@ Partial Class Form1
         '
         'Button18
         '
+        Me.Button18.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(437, 149)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(32, 23)
@@ -219,6 +237,7 @@ Partial Class Form1
         '
         'Button19
         '
+        Me.Button19.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(247, 178)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(32, 23)
@@ -227,6 +246,7 @@ Partial Class Form1
         '
         'Button20
         '
+        Me.Button20.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.Location = New System.Drawing.Point(285, 178)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(32, 23)
@@ -235,6 +255,7 @@ Partial Class Form1
         '
         'Button21
         '
+        Me.Button21.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.Location = New System.Drawing.Point(323, 178)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(32, 23)
@@ -243,6 +264,7 @@ Partial Class Form1
         '
         'Button22
         '
+        Me.Button22.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button22.Location = New System.Drawing.Point(361, 178)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(32, 23)
@@ -251,6 +273,7 @@ Partial Class Form1
         '
         'Button23
         '
+        Me.Button23.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.Location = New System.Drawing.Point(399, 178)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(32, 23)
@@ -259,6 +282,7 @@ Partial Class Form1
         '
         'Button24
         '
+        Me.Button24.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button24.Location = New System.Drawing.Point(437, 178)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(32, 23)
@@ -267,6 +291,7 @@ Partial Class Form1
         '
         'Button25
         '
+        Me.Button25.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button25.Location = New System.Drawing.Point(247, 207)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(32, 23)
@@ -275,6 +300,7 @@ Partial Class Form1
         '
         'Button26
         '
+        Me.Button26.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button26.Location = New System.Drawing.Point(285, 207)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(32, 23)
@@ -283,6 +309,7 @@ Partial Class Form1
         '
         'Button27
         '
+        Me.Button27.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button27.Location = New System.Drawing.Point(323, 207)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(32, 23)
@@ -291,6 +318,7 @@ Partial Class Form1
         '
         'Button28
         '
+        Me.Button28.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button28.Location = New System.Drawing.Point(361, 207)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(32, 23)
@@ -299,6 +327,7 @@ Partial Class Form1
         '
         'Button29
         '
+        Me.Button29.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button29.Location = New System.Drawing.Point(399, 207)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(32, 23)
@@ -307,6 +336,7 @@ Partial Class Form1
         '
         'Button30
         '
+        Me.Button30.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button30.Location = New System.Drawing.Point(437, 207)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(32, 23)
@@ -315,6 +345,7 @@ Partial Class Form1
         '
         'Button31
         '
+        Me.Button31.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button31.Location = New System.Drawing.Point(247, 236)
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(32, 23)
@@ -323,6 +354,7 @@ Partial Class Form1
         '
         'Button32
         '
+        Me.Button32.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button32.Location = New System.Drawing.Point(285, 236)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(32, 23)
@@ -331,6 +363,7 @@ Partial Class Form1
         '
         'Button33
         '
+        Me.Button33.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button33.Location = New System.Drawing.Point(323, 236)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(32, 23)
@@ -339,6 +372,7 @@ Partial Class Form1
         '
         'Button34
         '
+        Me.Button34.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button34.Location = New System.Drawing.Point(361, 236)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(32, 23)
@@ -347,6 +381,7 @@ Partial Class Form1
         '
         'Button35
         '
+        Me.Button35.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button35.Location = New System.Drawing.Point(399, 236)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(32, 23)
@@ -355,6 +390,7 @@ Partial Class Form1
         '
         'Button36
         '
+        Me.Button36.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button36.Location = New System.Drawing.Point(437, 236)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(32, 23)
