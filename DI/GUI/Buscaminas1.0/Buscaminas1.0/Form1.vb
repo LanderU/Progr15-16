@@ -1,4 +1,15 @@
 ﻿Public Class Form1
+    ' Array con el tablero 3 = Bomba
+    Dim tablero = {
+                        {3, 1, 0, 0, 0, 0}, ' Fila 1
+                        {1, 0, 1, 0, 0, 0}, ' Fila 2
+                        {0, 1, 3, 1, 1, 0}, ' Fila 3
+                        {0, 0, 1, 1, 3, 1}, ' Fila 4
+                        {1, 0, 0, 1, 1, 0}, ' Fila 5
+                        {3, 1, 1, 3, 1, 0}  ' Fila 6
+                   }
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label2.Visible = False
         Button37.Enabled = False
@@ -15,6 +26,7 @@
             Button1.Text = "3"
             Button1.Enabled = False
             Label2.Visible = True
+            Button37.Enabled = True
         End If
     End Sub
 
