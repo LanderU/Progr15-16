@@ -1,13 +1,13 @@
 ﻿Public Class Form1
     ' Array con el tablero 3 = Bomba
-    Dim tablero = {
-                        {3, 1, 0, 0, 0, 0}, ' Fila 1
-                        {1, 0, 1, 0, 0, 0}, ' Fila 2
-                        {0, 1, 3, 1, 1, 0}, ' Fila 3
-                        {0, 0, 1, 1, 3, 1}, ' Fila 4
-                        {1, 0, 0, 1, 1, 0}, ' Fila 5
-                        {3, 1, 1, 3, 1, 0}  ' Fila 6
-                   }
+    ' Dim tablero = {
+    '                    {3, 1, 0, 0, 0, 0}, ' Fila 1
+    '                   {1, 0, 1, 0, 0, 0}, ' Fila 2
+    '                  {0, 1, 3, 1, 1, 0}, ' Fila 3
+    '                 {0, 0, 1, 1, 3, 1}, ' Fila 4
+    '                {1, 0, 0, 1, 1, 0}, ' Fila 5
+    '               {3, 1, 1, 3, 1, 0}  ' Fila 6
+    '         }
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -23,11 +23,59 @@
     ' Controlamos el pulso del botón
     Private Sub pulsado(ByRef boton_clicado)
         If boton_clicado.Equals(Button1) Then
-            Button1.Text = "3"
-            Button1.Enabled = False
+            boton_clicado.BackColor = Color.Red
             Label2.Visible = True
             Button37.Enabled = True
+        ElseIf boton_clicado.Equals(Button2)
+            boton_clicado.text = "1"
+        ElseIf boton_clicado.Equals(Button7)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button9)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button14)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button15)
+            boton_clicado.BackColor = Color.Red
+            Label2.Visible = True
+            Button37.Enabled = True
+        ElseIf boton_clicado.Equals(Button16)
+            boton_clicado.text = "1"
+        ElseIf boton_clicado.Equals(Button17)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button21)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button22)
+            boton_clicado.text = "1"
+        ElseIf boton_clicado.Equals(Button23)
+            boton_clicado.BackColor = Color.Red
+            Label2.Visible = True
+            Button37.Enabled = True
+        ElseIf boton_clicado.Equals(Button24)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button25)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button28)
+            boton_clicado.text = "1"
+        ElseIf boton_clicado.Equals(Button29)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button31)
+            boton_clicado.BackColor = Color.Red
+            Label2.Visible = True
+            Button37.Enabled = True
+        ElseIf boton_clicado.Equals(Button32)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button33)
+            boton_clicado.Text = "1"
+        ElseIf boton_clicado.Equals(Button34)
+            boton_clicado.BackColor = Color.Red
+            Label2.Visible = True
+            Button37.Visible = True
+        ElseIf boton_clicado.Equals(Button35)
+            boton_clicado.Text = "1"
+        Else
+            boton_clicado.BackColor = Color.Green
         End If
+        boton_clicado.Enabled = False
     End Sub
 
     Private Sub Button37_Click(sender As Object, e As EventArgs) Handles Button37.Click
