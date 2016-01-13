@@ -5,7 +5,7 @@
         TextBox2.Enabled = False
         TextBox3.Enabled = False
         TextBox4.Enabled = False
-        TextBox5.Enabled = False
+        TextBox5.ReadOnly = True
 
         ' Deshabilitamos los botones campeón y salir
 
@@ -45,9 +45,23 @@
     End Sub
 
     Private Sub limpiarConAlentrarelMouse(sender As Object, e As EventArgs) Handles TextBox5.MouseEnter
-        For Each bot As Button In botones
-            bot.Enabled = True
-        Next
+        ' Depurar
+        ' For Each bot As Button In botones
+        '     bot.Enabled = True
+        ' Next
+        Button1.Enabled = True
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button4.Enabled = True
+        Button5.Enabled = False
+
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
+
+
     End Sub
 
 
