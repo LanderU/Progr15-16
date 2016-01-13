@@ -1,5 +1,6 @@
 ﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Text = "MEDALLERO"
         ' Deshabilitamos los textBox
         TextBox1.Enabled = False
         TextBox2.Enabled = False
