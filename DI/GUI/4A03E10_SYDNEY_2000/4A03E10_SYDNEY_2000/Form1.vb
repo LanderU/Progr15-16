@@ -23,6 +23,8 @@
 
     ' Array de los botones
     Dim botones() As Object = {Button1, Button2, Button3, Button4}
+    ' Array de TextBox
+    Dim text() As Object = {TextBox1, TextBox2, TextBox3, TextBox4, TextBox5}
     Private Sub pressButton(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click, Button6.Click
         Dim pulsado As Button = CType(sender, Button)
         If pulsado.Equals(Button1) Then
@@ -45,22 +47,46 @@
 
     End Sub
 
-    Private Sub limpiarConAlentrarelMouse(sender As Object, e As EventArgs) Handles TextBox5.MouseEnter
-        ' Depurar
-        ' For Each bot As Button In botones
-        '     bot.Enabled = True
-        ' Next
-        Button1.Enabled = True
-        Button2.Enabled = True
-        Button3.Enabled = True
-        Button4.Enabled = True
-        Button5.Enabled = False
+    ' Private Sub limpiarConAlentrarelMouse(sender As Object, e As EventArgs) Handles TextBox5.MouseEnter
+    ' Depurar
+    ' For Each bot As Button In botones
+    '     bot.Enabled = True
+    ' Next
+    '    Button1.Enabled = True
+    '   Button2.Enabled = True
+    '  Button3.Enabled = True
+    ' Button4.Enabled = True
+    'Button5.Enabled = False
 
-        TextBox1.Clear()
-        TextBox2.Clear()
-        TextBox3.Clear()
-        TextBox4.Clear()
-        TextBox5.Clear()
+    ' TextBox1.Clear()
+    ' TextBox2.Clear()
+    ' TextBox3.Clear()
+    ' TextBox4.Clear()
+    ' TextBox5.Clear()
+
+
+    '    End Sub
+
+    Private Sub mouseMove(sender As Object, e As EventArgs) Handles TextBox5.MouseMove
+        ' Depurar
+        For Each bot As Button In botones
+            bot = New Button()
+            bot.Enabled = True
+        Next
+        'Button1.Enabled = True
+        'Button2.Enabled = True
+        'Button3.Enabled = True
+        'Button4.Enabled = True
+        'Button5.Enabled = False
+        For Each t As TextBox In text
+            t = New TextBox()
+            t.Clear()
+        Next
+        'TextBox1.Clear()
+        'TextBox2.Clear()
+        'TextBox3.Clear()
+        'TextBox4.Clear()
+        'TextBox5.Clear()
 
 
     End Sub
