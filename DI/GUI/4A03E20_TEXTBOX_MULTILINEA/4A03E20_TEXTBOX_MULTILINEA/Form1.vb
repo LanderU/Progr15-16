@@ -16,7 +16,12 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        TextBox2.AppendText(" " + TextBox1.Text)
+        If (TextBox2.Text.Count() = 0) Then
+            TextBox2.AppendText(TextBox1.Text)
+        Else
+            TextBox2.AppendText(" " + TextBox1.Text)
+
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -37,11 +42,11 @@
     End Sub
 
     Private Sub contarCajaCompleta(sender As Object, e As EventArgs) Handles Me.MouseMove
-        If (TextBox2.SelectedText.Count = 0) Then
-            Label4.Text = "0"
-        Else
-            Label4.Text = TextBox2.SelectedText.Count() - 1
+        'If (TextBox2.SelectedText.Count = 0) Then
+        'Label4.Text = "0"
+        ' Else
+        Label4.Text = TextBox2.SelectedText.Count()
 
-        End If
+        ' End If
     End Sub
 End Class
