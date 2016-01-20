@@ -15,10 +15,17 @@
     End Sub
 
     Private Sub botonEtiquetasRojas(sender As Object, e As EventArgs) Handles Button2.Click
-        For Each control As Control In Me.Controls
+         For Each control As Control In Me.Controls
             If (TypeOf control Is Label) Then
                 control.ForeColor = Color.Red
             End If
+            If (TypeOf control Is TextBox) Then
+                Controls.Remove(TextBox1)
+            End If
+            Dim etiquetaNueva As Label = New Label
+            etiquetaNueva.Text = "La nueva etiqueta"
+            etiquetaNueva.Location = New Point(150, 250)
+            Controls.Add(etiquetaNueva)
         Next
     End Sub
 
