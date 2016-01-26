@@ -66,8 +66,10 @@ Public Class Form1
                 MsgBox("Está")
             End If
         Else
-                ' Por código
-            End If
+            ListBox1.ClearSelected()
+            ListBox1.SelectionMode = SelectionMode.One
+            ListBox1.SelectedIndex = CInt(ListBox1.FindString(TextBox2.Text))
+        End If
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -83,4 +85,5 @@ Public Class Form1
 
         End If
     End Sub
+
 End Class
