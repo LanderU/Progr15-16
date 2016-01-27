@@ -67,8 +67,10 @@ Public Class Form1
             End If
         Else
             ListBox1.ClearSelected()
-            ListBox1.SelectionMode = SelectionMode.One
-            ListBox1.SelectedIndex = CInt(ListBox1.FindString(TextBox2.Text))
+            ListBox1.SelectionMode = SelectionMode.MultiSimple
+            ' ListBox1.SelectedIndex = CInt(ListBox1.FindString(TextBox2.Text))
+            ListBox1.SetSelected(1, True)
+            ListBox1.SetSelected(2, True)
         End If
     End Sub
 
