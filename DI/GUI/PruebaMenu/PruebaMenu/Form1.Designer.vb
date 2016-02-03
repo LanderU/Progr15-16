@@ -22,13 +22,22 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.MayusculasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MinúsculasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FuenteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TimesNewRomanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalibriToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -76,6 +85,49 @@ Partial Class Form1
         Me.ToolStripMenuItem4.Size = New System.Drawing.Size(209, 22)
         Me.ToolStripMenuItem4.Text = "ToolStripMenuItem4"
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MayusculasToolStripMenuItem, Me.MinúsculasToolStripMenuItem, Me.FuenteToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 92)
+        '
+        'MayusculasToolStripMenuItem
+        '
+        Me.MayusculasToolStripMenuItem.Name = "MayusculasToolStripMenuItem"
+        Me.MayusculasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MayusculasToolStripMenuItem.Text = "Mayúsculas"
+        '
+        'MinúsculasToolStripMenuItem
+        '
+        Me.MinúsculasToolStripMenuItem.Name = "MinúsculasToolStripMenuItem"
+        Me.MinúsculasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MinúsculasToolStripMenuItem.Text = "Minúsculas"
+        '
+        'FuenteToolStripMenuItem
+        '
+        Me.FuenteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArialToolStripMenuItem, Me.TimesNewRomanToolStripMenuItem, Me.CalibriToolStripMenuItem})
+        Me.FuenteToolStripMenuItem.Name = "FuenteToolStripMenuItem"
+        Me.FuenteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FuenteToolStripMenuItem.Text = "Fuente"
+        '
+        'ArialToolStripMenuItem
+        '
+        Me.ArialToolStripMenuItem.Name = "ArialToolStripMenuItem"
+        Me.ArialToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.ArialToolStripMenuItem.Text = "Arial"
+        '
+        'TimesNewRomanToolStripMenuItem
+        '
+        Me.TimesNewRomanToolStripMenuItem.Name = "TimesNewRomanToolStripMenuItem"
+        Me.TimesNewRomanToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.TimesNewRomanToolStripMenuItem.Text = "Times New Roman"
+        '
+        'CalibriToolStripMenuItem
+        '
+        Me.CalibriToolStripMenuItem.Name = "CalibriToolStripMenuItem"
+        Me.CalibriToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.CalibriToolStripMenuItem.Text = "Calibri"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -88,6 +140,7 @@ Partial Class Form1
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -99,4 +152,11 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents MayusculasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MinúsculasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FuenteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ArialToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TimesNewRomanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CalibriToolStripMenuItem As ToolStripMenuItem
 End Class
