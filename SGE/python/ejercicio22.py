@@ -18,7 +18,9 @@ class Empleado:
 	def hacienda(self):
 
 		if self.sueldo > 3000:
-			print ' El señor %s, deberá pagar impuestos dado que su sueldo es %d y supera los 3000' %(self.nombre,self.sueldo)
+			print ' El señor %s, deberá pagar impuestos dado que su sueldo es %d y supera los 3000.' %(self.nombre,self.sueldo)
+		else:
+			print 'El señor %s se libra por el momento de pagar impuestos.' % (self.nombre)
 
 if __name__ == "__main__":
 
