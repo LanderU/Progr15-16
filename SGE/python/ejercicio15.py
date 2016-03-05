@@ -20,14 +20,17 @@ def menorCadena(cadena4,cadena5):
 	else:
 		return cadena4
 
-c1 = raw_input('Escriba una cadena de texto: ')
-c2 = raw_input('Escriba su nombre: ')
-c3 = raw_input('Escriba su apellido: ')
-c4 = raw_input('Escriba otra cadena: ')
-c5 = raw_input('La última cadena: ')
+if __name__ == "__main__":
 
-print primerCaracter(c1)+' es el primer caracter de la cadena %s' % c1
-print ''
-print 'La concatenación de su nombre y apellido es: '+ concatenar(c2,c3)
-print ''
-print menorCadena(c4,c5)+' es la cadena que menos valores tiene de las introducidas %s , %s' %(c4,c5)
+
+	c1 = raw_input('Escriba una cadena de texto: ')
+	c2 = raw_input('Escriba su nombre: ')
+	c3 = raw_input('Escriba su apellido: ')
+	c4 = raw_input('Escriba otra cadena: ')
+	c5 = raw_input('La última cadena: ')
+
+	print primerCaracter(c1)+' es el primer caracter de la cadena %s' % c1
+	print ''
+	print 'La concatenación de su nombre y apellido es: '+ concatenar(c2,c3) 
+	print ''
+	print menorCadena(c4,c5)+' es la cadena que menos valores tiene de las introducidas %s , %s' %(c4,c5)
