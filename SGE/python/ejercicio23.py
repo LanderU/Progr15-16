@@ -27,6 +27,10 @@ class Rectangulo:
 
 def introducirDatos():
 
+	'''
+		Función que nos ofrece la posibilidad de introducir datos además de realizar las comprobaciones para que el dato sea válido.
+	'''
+
 	while True:
 		try:
 			n = float(raw_input('Introduzca el valor del lado: '))
