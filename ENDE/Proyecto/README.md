@@ -1,6 +1,6 @@
 # Proyecto
 
-Consiste en realizar los arhivos para:
+Consiste en realizar los distintos diagramas:
 
 * Dependencias funcionales y no funcionales.
 * Diagrama de Clases.
