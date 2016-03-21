@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<form string="SubContratas">
+  	 <group colspan="2" col="2">
+  	 	<separator string="Datos Personales" colspan="2"/>
+        <field name="x_nombre"/>
+		<field name="x_apellidos"/>
+		<field name="x_dni"/>
+		<field name="x_fecha_nac"/>
+    </group>
+     <group colspan="2" col="2">
+     	<separator string="Datos Empresa" colspan="2"/>
+     	<field name="x_empresa_origen"/>
+		<field name="x_puesto"/>
+     </group>
+     <group colspan="1" col="1">
+     	<separator string="Otros Datos" colspan="1"/>
+     	<field name="x_observaciones"/>
+     </group>
+</form>
