@@ -60,5 +60,5 @@ CREATE PROCEDURE SumarExistencia
 @existencia as int
 AS
 BEGIN
-	UPDATE productos SET existencia = @existencia WHERE cod_prod = @cod_prod
+	UPDATE productos SET existencia = existencia + @existencia WHERE cod_prod = @cod_prod
 END
