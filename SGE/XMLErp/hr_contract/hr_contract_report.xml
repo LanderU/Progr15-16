@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<report id="report_hr_contract"
+				string="Summary of contracts"
+				model="hr.contract"
+				name="contract.summary"
+				xsl="hr_contract/report/hr_contract_summary.xsl"
+				auto="False"
+				menu="False"/>
+				
+				
+				 
+	</data>
+</openerp>
+
